@@ -1,0 +1,121 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+/* media queries to change number of columns based on available width */
+@media (min-width:0px) {
+    .wall-post {
+        width: calc(100% - 2 * 15px);
+    }
+}
+@media (min-width:320px) {
+    .wall-post {
+        width: calc(100% - 2 * 15px);
+    }
+}
+@media (min-width:481px) {
+    .wall-post {
+        width: calc(50% - 2 * 15px);
+    }
+}
+@media (min-width:641px) {
+    .wall-post {
+        width: calc(33.333% - 2 * 15px);
+    }
+}
+@media (min-width:1025px) {
+    .wall-post {
+        width: calc(25% - 2 * 15px);
+    }
+}
+@media (min-width:1501px) {
+    .wall-post {
+        width: calc(20% - 2 * 15px);
+    }
+}
+/* post outer box */
+.wall-post {
+    display: inline-block;
+    margin: 15px;
+    overflow-y: hidden;
+    border: 1px solid rgb(5,5,5);
+    float:left;
+}
+/* post header */
+.wall-post .wall-post-header{
+    height: 50px;
+    overflow: hidden;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    background-color:#272727;
+    color: white;
+}
+.wall-post .wall-post-header .text {
+    line-height: 31px;
+    padding: 9px;
+    float: left;
+    text-align: left;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+}
+.wall-post .wall-post-header .text span {
+    font-size: 12px;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    padding: 3px;
+}
+/* twitter button class*/
+.wall-post .wall-post-header .text span.fa{
+     font-size:2em;
+     text-align: left;
+   /* background: #00ABE3;*/
+}
+.wall-post .wall-post-header span.wall-post-time {
+    line-height: 31px;
+    padding: 9px;
+    float: right;
+    text-align: right;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+/* horizontal line after header */
+.wall-post-hr {
+    display: block;
+    margin: 0.5em;
+    border: 1px solid rgb(5,5,5);
+}
+/* post text */
+.wall-post .wall-post-text {
+    width: 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 1.2em
+    line-height: 1.2;
+    height: calc(1.2em * 1.2 * 5) !important;
+}
+/* post media */
+.wall-post .wall-post-media{
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+}
